@@ -1,0 +1,116 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aditya's Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>Image Gallery</h2>
+    </nav>
+
+
+    <!-- Main Section -->
+    <main>
+
+        <h1>My Image Gallery</h1>
+
+        <p class="subtitle">
+            Explore beautiful moments through images
+        </p>
+
+
+        <!-- Filter Buttons -->
+        <div class="filters">
+
+            <button class="filter-btn active" data-category="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-category="nature">
+                Nature
+            </button>
+
+            <button class="filter-btn" data-category="travel">
+                Travel
+            </button>
+
+            <button class="filter-btn" data-category="animals">
+                Animals
+            </button>
+
+        </div>
+
+
+        <!-- Gallery -->
+        <div class="gallery">
+
+            <div class="gallery-item" data-category="nature">
+                <img src="images/Nature1.jfif"
+                     alt="Beautiful nature">
+            </div>
+
+            <div class="gallery-item" data-category="travel">
+                <img src="images/Travel1.jfif"
+                     alt="Travel destination">
+            </div>
+
+            <div class="gallery-item" data-category="animals">
+                <img src="images/Animal1.jfif"
+                     alt="Beautiful animal">
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="images/Nature2.jfif"
+                     alt="Green mountains">
+            </div>
+
+            <div class="gallery-item" data-category="travel">
+                <img src="images/Travel2.jfif"
+                     alt="Travel location">
+            </div>
+
+            <div class="gallery-item" data-category="animals">
+                <img src="images/Animal2.jfif"
+                     alt="Cute animal">
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <span class="close" id="close">&times;</span>
+
+        <button class="prev" id="prev">
+            &#10094;
+        </button>
+
+        <img id="lightbox-img" src="" alt="">
+
+        <button class="next" id="next">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
